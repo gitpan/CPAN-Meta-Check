@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution CPAN-Meta-Check,
+version 0.001:
+
+  Verify requirements in a CPAN::Meta object
+
+This software is copyright (c) 2012 by Leon Timmermans.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
