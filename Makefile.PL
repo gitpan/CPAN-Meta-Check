@@ -26,13 +26,14 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "CPAN::Meta::Check",
   "PREREQ_PM" => {
+    "CPAN::Meta" => "2.120920",
     "CPAN::Meta::Requirements" => "2.120920",
     "Exporter" => "5.57",
     "Module::Metadata" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -1,6 +1,6 @@
 package CPAN::Meta::Check;
 {
-  $CPAN::Meta::Check::VERSION = '0.001';
+  $CPAN::Meta::Check::VERSION = '0.002';
 }
 use strict;
 use warnings;
@@ -38,13 +38,14 @@ sub _check_conflict {
 
 sub requirements_for {
 	my ($meta, $phases, $type) = @_;
+	my $prereqs = ref($meta) eq 'CPAN::Meta' ? $meta->effective_prereqs : $meta;
 	if (!ref $phases) {
-		return $meta->effective_prereqs->requirements_for($phases, $type);
+		return $prereqs->requirements_for($phases, $type);
 	}
 	else {
 		my $ret = CPAN::Meta::Requirements->new;
 		for my $phase (@{ $phases }) {
-			$ret->add_requirements($meta->effective_prereqs->requirements_for($phase, $type));
+			$ret->add_requirements($prereqs->requirements_for($phase, $type));
 		}
 		return $ret;
 	}
@@ -88,7 +89,7 @@ CPAN::Meta::Check - Verify requirements in a CPAN::Meta object
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
