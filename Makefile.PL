@@ -12,7 +12,6 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Verify requirements in a CPAN::Meta object",
   "AUTHOR" => "Leon Timmermans <leont\@cpan.org>",
   "BUILD_REQUIRES" => {
-    "CPAN::Meta" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Test::Differences" => 0,
@@ -33,7 +32,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -3,7 +3,6 @@ abstract: 'Verify requirements in a CPAN::Meta object'
 author:
   - 'Leon Timmermans <leont@cpan.org>'
 build_requires:
-  CPAN::Meta: 0
   File::Find: 0
   File::Temp: 0
   Test::Differences: 0
@@ -11,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.120920'
+generated_by: 'Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,4 +27,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Meta-Check
   repository: git://github.com/Leont/cpan-meta-check.git
-version: 0.003
+version: 0.004
