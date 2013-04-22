@@ -1,5 +1,9 @@
 Revision history for CPAN-Meta-Check
 
+0.005     2013-04-22 17:27:50 Europe/Amsterdam
+          Converted from Test::Differences to Test::Deep
+          Don't load CPAN::Meta from CPAN::Meta::Check
+
 0.004     2012-05-24 21:35:08 Europe/Amsterdam
           Depend on recent enough CPAN::Meta
 
