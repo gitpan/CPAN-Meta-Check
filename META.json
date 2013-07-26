@@ -4,7 +4,7 @@
       "Leon Timmermans <leont@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.130880",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -56,9 +56,9 @@
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/Leont/cpan-meta-check.git",
-         "web" : "http://github.com/Leont/cpan-meta-check"
+         "web" : "https://github.com/Leont/cpan-meta-check"
       }
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
 
