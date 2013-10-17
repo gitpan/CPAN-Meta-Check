@@ -4,7 +4,7 @@
       "Leon Timmermans <leont@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132830",
    "license" : [
       "perl_5"
    ],
@@ -28,8 +28,8 @@
       },
       "runtime" : {
          "requires" : {
-            "CPAN::Meta" : "2.120920",
-            "CPAN::Meta::Requirements" : "2.120920",
+            "CPAN::Meta::Prereqs" : "2.132830",
+            "CPAN::Meta::Requirements" : "2.121",
             "Exporter" : "5.57",
             "Module::Metadata" : "0",
             "perl" : "5.006",
@@ -40,11 +40,19 @@
       "test" : {
          "requires" : {
             "CPAN::Meta" : "2.120920",
-            "File::Find" : "0",
-            "File::Temp" : "0",
+            "Env" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Test::Deep" : "0",
             "Test::More" : "0.88"
          }
+      }
+   },
+   "provides" : {
+      "CPAN::Meta::Check" : {
+         "file" : "lib/CPAN/Meta/Check.pm",
+         "version" : "0.008"
       }
    },
    "release_status" : "stable",
@@ -59,6 +67,6 @@
          "web" : "https://github.com/Leont/cpan-meta-check"
       }
    },
-   "version" : "0.007"
+   "version" : "0.008"
 }
 

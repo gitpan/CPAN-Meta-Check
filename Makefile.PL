@@ -20,8 +20,8 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "CPAN::Meta::Check",
   "PREREQ_PM" => {
-    "CPAN::Meta" => "2.120920",
-    "CPAN::Meta::Requirements" => "2.120920",
+    "CPAN::Meta::Prereqs" => "2.132830",
+    "CPAN::Meta::Requirements" => "2.121",
     "Exporter" => "5.57",
     "Module::Metadata" => 0,
     "strict" => 0,
@@ -29,12 +29,14 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "CPAN::Meta" => "2.120920",
-    "File::Find" => 0,
-    "File::Temp" => 0,
+    "Env" => 0,
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
     "Test::Deep" => 0,
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.007",
+  "VERSION" => "0.008",
   "test" => {
     "TESTS" => "t/*.t"
   }
